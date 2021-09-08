@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("Simple Blockchain (etcd)"),
         trailingActions: [
           PlatformIconButton(
+            key: Key("add"),
             icon: Icon(PlatformIcons(context).add),
             onPressed: () {
               final rootContext = context;

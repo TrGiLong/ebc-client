@@ -24,11 +24,12 @@ class BlockChainList extends StatelessWidget {
             return Column(
               children: [
                 ListTile(
+                  key: Key("block"),
                   leading: Text("${block.index}"),
                   trailing: Icon(Icons.chevron_right),
                   title: Text(block.value),
                   onTap: () {
-                    context.router.pushPath('/${block.index}');
+                    context.router.pushNamed('/${block.index}');
                   },
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

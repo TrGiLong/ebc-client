@@ -36,6 +36,7 @@ class _InsertBlockScreenState extends State<InsertBlockScreen> {
   @override
   Widget build(BuildContext context) {
     return PlatformAlertDialog(
+      key: Key("add-alert"),
       title: Text("New block"),
       content: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -43,6 +44,7 @@ class _InsertBlockScreenState extends State<InsertBlockScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             PlatformTextField(
+              key: Key("input"),
               controller: controller,
               onChanged: (value) {
                 setState(() {});

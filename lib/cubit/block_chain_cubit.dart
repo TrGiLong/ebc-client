@@ -2,14 +2,11 @@ import 'package:bloc/bloc.dart';
 import 'package:ebc_app/model/block.dart';
 import 'package:ebc_app/repository/ebc_repository.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/material.dart';
 
 part 'block_chain_state.dart';
 
 class BlockChainCubit extends Cubit<BlockChainState> {
   final EbcRepository repository;
-
-  final TextEditingController valueController = TextEditingController();
 
   BlockChainCubit(this.repository) : super(BlockChainState());
 
@@ -26,7 +23,6 @@ class BlockChainCubit extends Cubit<BlockChainState> {
 
   @override
   Future<void> close() {
-    valueController.dispose();
     return super.close();
   }
 
