@@ -12,6 +12,7 @@ void main() {
   runApp(
     // MyApp(ebcRepository: EbcServerRepository('http://10.0.2.2:3000')),
     MyApp(ebcRepository: EbcServerRepository('http://104.248.24.218:3000')),
+    // MyApp(ebcRepository: EbcServerRepository('http://localhost:3000')),
   );
 }
 

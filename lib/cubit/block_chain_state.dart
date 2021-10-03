@@ -12,13 +12,8 @@ class BlockChainState extends Equatable {
   @override
   List<Object> get props => [fetching, blocks];
 
-  BlockChainState copyWith({
-    bool? fetching,
-    List<Block>? blocks,
-  }) {
+  BlockChainState copyWith({bool? fetching, List<Block>? blocks}) {
     return BlockChainState(
-      fetching: fetching ?? this.fetching,
-      blocks: blocks ?? this.blocks,
-    );
+        fetching: fetching ?? this.fetching, blocks: blocks ?? this.blocks);
   }
 }

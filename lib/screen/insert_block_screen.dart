@@ -11,7 +11,7 @@ class InsertBlockScreen extends StatefulWidget {
 }
 
 class _InsertBlockScreenState extends State<InsertBlockScreen> {
-  final TextEditingController controller = TextEditingController(text: "http://demo.com");
+  final TextEditingController controller = TextEditingController(text: "https://");
 
   @override
   void dispose() {
